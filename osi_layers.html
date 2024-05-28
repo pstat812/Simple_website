@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--SEHH1016 Introduction to Internet Technology
+				student name,student id,class
+				*** Chau Wai Ming(20075664A) 201C ***
+				Chan Tak Ming(20073738A) 201C
+				Lee Tao(20045346A) 201A
+				Lo Yi(20150411A) 201A
+				Poon Sing Tat(20108491A) 201C
+				Tse Pak Chuen(20066575A) 201A-->
+		<title>OSI 7 Layer</title>
+
+		<!-- add icon link -->
+		<link rel="icon" href="icon/IIT.png" sizes="16x16" type="image/png">
+
+	</head>
+	<body bgcolor="#F2F2F2">
+
+		<!--  the top  -->
+		<a name="Top"></a>
+
+		<!--  navigation bar  -->
+		<table width="100%">
+			<tr>
+				<td width="30%" style="font-size:45px">IIT NEWS</td>
+				<td width="34%"></td>
+				<td width="4%"><a href="index.html"><img src="icon/home.png" width="50px" alt="Home_page"></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="history.html"><h3>HISTORY</h3></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="osi_layers.html"><h3>OSI_LAYERS</h3></a></td>
+				<td width="1%"></td>
+				<td width="6%"><a href="osi_data_flow.html"><h3>OSI_DATA_FLOW</h3></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="form.html"><h3>FEEDBACK</h3></a></td>
+				<td width="1%"></td>
+			</tr>
+		</table>
+		<hr>
+		
+		<!--menu-->
+	    <table width="100%">
+            <tr>
+                <td width="15%"></td>
+                <td width="10%" align="center" height="60px" bgcolor="#78b8db"><a href="#layer7" style="color:white"><b>APPLICATION</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#78b8db"><a href="#layer6" style="color:white"><b>PRESENTATION</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#79afd5"><a href="#layer5" style="color:white"><b>SESSION</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#7b9fcc"><a href="#layer4" style="color:white"><b>TRANSPORT</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#7d8fc3"><a href="#layer3" style="color:white"><b>NETWORK</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#7f81bb"><a href="#layer2" style="color:white"><b>DATALINK</b></a></td>
+                <td width="10%" align="center" height="60px" bgcolor="#7f81bb"><a href="#layer1" style="color:white"><b>PHYSICAL</b></a></td>
+                <td width="15%"></td>
+            </tr>
+        </table>
+		<br><br><br><br><br><br><br>
+
+		<!--Application layer layer 7-->
+		<a name="layer7"></a>
+			<table>
+				<tr>
+					<td width="4%"></td>
+					<td><img src="picture/layer7.png" width="350px" align="left"></td>
+					<td width="5%"></td>
+					<td rowspan="2"><img src="picture/interface.png" align="left" width="600px" height="400px"></td>
+				</tr>
+				<tr>
+					<td width="4%"> </td>
+					<td width= "60%" align="justify" style="font-size:18px">The application layer provides an interface for application software to the end-user. End-users interact with it directly with the interface of application
+				software. For example, a user uses a web browser to set up communication with another application software. Those interactive applications provide a set of services that allow the application layer to
+				supply data and receive data from the presentation layer. </td>
+				</tr>
+			</table>
+		<br><br><br><br><br><br>
+
+		<!--Presentation layer layer 6-->
+		<a name="layer6"></a>
+			<table>
+				<tr>
+					<td width="10%"></td>
+					<td rowspan="2"><img src="picture/translate.png" align="left"> </td>
+					<td><img src="picture/layer6.png" width="350px" align="right"></td>
+					<td width="4%" align="left"></td>
+				</tr>
+				<tr>
+					<td width = "10%"></td>
+					<td align = "left" align="justify" style="font-size:18px">The presentation layer performs the task for syntax processing or converting data from one format to another format. Within the presentation layer,
+					data received from the application layer or session layer. Then it handles translating the data such as reformatting, compression and decompression, encryption, and decryption if necessary.</td>
+				</tr>
+			</table>
+		<br><br><br><br><br>
+
+		<!--session layer layer layer 5-->
+		<a name="layer5"></a>
+			<table>
+				<tr>
+					<td width="4%"></td>
+					<td><img src="picture/layer5.png" width="350px" align="left"></td>
+					<td width="5%"></td>
+					<td rowspan="2"><img src="picture/session.png" align="left" width="500px" height="380px"></td>
+				</tr>
+				<tr>
+					<td width="4%"> </td>
+					<td width= "60%" align="justify" style="font-size:18px">The session layer performs the task for set up and maintenance the network and connection between two devices. When two devices are no longer connect,
+					this layer being responsible for authentication and reconnection. Once the authentication and connection are established, the data will pass to the transport layer.</td>
+				</tr>
+			</table>
+		<br><br><br><br><br>
+
+		<!--Transport layer layer 4-->
+		<a name="layer4"></a>
+			<table>
+				<tr>
+					<td width="10%"></td>
+					<td rowspan="2"><img src="picture/transport.png" align="left"> </td>
+					<td width="10%"></td>
+					<td><img src="picture/layer4.png" width="350px" align="right"></td>
+					<td width="4%" align="left"> </td>
+				</tr>
+				<tr>
+					<td width = "10%"></td>
+					<td width="10%"></td>
+					<td align = "left" align="justify" style="font-size:18px">The transport layer is used to guarantee the success of data delivery. In this layer, data are divided into small packets called a segment.
+					The transport layer determines the flow of these segments. It controls the sending order of segments and the amount of data transmitted. Then, data are having error checking. Since data may be corrupted
+					in the previous steps, the error checks can ensure the data's reliability and integrity.
+					 </td>
+				</tr>
+			</table>
+		<br><br><br><br><br><br><br><br><br>
+
+		<!--network layer layer layer 3-->
+		<a name="layer3"></a>
+			<table>
+				<tr>
+					<td width="4%"> </td>
+					<td><img src="picture/layer3.png" width="350px" align="left"></td>
+					<td width="5%"></td>
+					<td rowspan="2"><img src="picture/network.png" align="left" width="520px"></td>
+				</tr>
+				<tr>
+					<td width="4%"> </td>
+					<td width= "60%" align="justify" style="font-size:18px">The network layer is used for logical addressing, determinate path, internetworking, and routing. In this layer, data will be packetizing and add
+					the destination address and source to the header of each frame of data and finds the most efficient network path based on the network conditions, the priority of service, and other factors.
+					At last, the network layer provides the routing services within an internetwork and passes the packet to the next layer. The protocols used to route the network traffic are known as Network layer protocols.
+					Examples of protocols are IP and IPv6. </td>
+				</tr>
+			</table>
+		<br><br><br><br>
+
+		<!--Data-Link layer layer 2-->
+		<a name="layer2"></a>
+			<table>
+				<tr>
+					<td width="10%"></td>
+					<td rowspan="2"><img src="picture/link.png"  width="350px" align="left"> </td>
+					<td><img src="picture/layer2.png" width="350px" align="right"></td>
+					<td width="4%" align="left"> </td>
+				</tr>
+				<tr>
+					<td width = "10%"></td>
+					<td align = "left" align="justify" style="font-size:18px">The Data-Link layer is responsible for the error-free transfer of data frames. Its main functions are flow control, error control, access control,
+					and physical addressing. When data from other layers pass to this layer, the layer adds a header to the packet that contains the hardware destination and source address. While sending the packet to the receiver,
+					the data-link layer controls the data transmission by control the processing speed. The sender and receiver should have the same transmission speed. Otherwise the packet may be lost or corrupted. </td>
+				</tr>
+			</table>
+		<br><br><br><br><br>
+
+		<!--physical layer layer 1-->
+		<a name="layer1"></a>
+			<table>
+				<tr>
+					<td width="4%"> </td>
+					<td><img src="picture/layer1.png" width="350px" align="left"></td>
+					<td width="5%"></td>
+					<td rowspan="2"><img src="picture/phys.png" align="left" width="500px" height="380px"></td>
+				</tr>
+				<tr>
+					<td width="4%"> </td>
+					<td width= "60%" align="justify" style="font-size:18px">The physical layer passes data on to the media. Data in the model are received or sent to another device in this layer. To send to another device,
+					data need to pass through network devices, such as:
+					<ul>
+					<li>hub</li>
+					<li>network cable</li>
+					<li>switch</li>
+					<li>repeater</li>
+					<li>router</li>
+					</ul>
+					And then convert data into the analog signal or digital signal.</td>
+				</tr>
+			</table>
+		<br><br><br><br><br>
+
+		<!--  return to the top  -->
+		<a href="#Top"><img src="icon/Top.png" width="40px" alt="top" align="right"></a>
+
+	</body>
+	<!-- Reference
+	Image referencing
+	1.Financial translation. (n.d.). [Illustration]. Languagewire. https://www.languagewire.com/en/blog/financial-translation
+	2.M. (n.d.). Computer parts and connection diagram isometric [Illustration]. Shutterstock. https://www.shutterstock.com/zh-Hant/image-vector/computer-parts-connection-diagram-isometric-central-1815064514
+	3.Network maintenance. (2020, March 31). [Illustration]. PngAAA. https://www.pngaaa.com/detail/995202
+	4.[Osi model]. (n.d.). Firewall Firm. https://firewall.firm.in/what-is-the-osi-model/
+	5.Ryanokon, Y. (n.d.). Vector SEO link building cartoon icon [Illustration]. 123RF. https://es.123rf.com/photo_51175854_seo-icono-de-dibujos-animados-de-construcci%C3%B3n-de-enlaces-cadena-de-eslabones-conexi%C3%B3n-web-optimizaci%C3%B3n-de-pro.html
+	6.Technology Background. (n.d.). [Illustration]. Kissclipart. https://www.kissclipart.com/clipart-information-technology-it-infrastructure-t-lc0tc1/
+	7.Transport. (n.d.). [Illustration]. EDPS. https://edps.europa.eu/data-protection/our-work/subjects/transport_enUser interface. (n.d.). [Illustration]. Medium. https://medium.com/@ClrMobile/mobile-app-design-fundamentals-user-experience-vs-user-interface-f07f5e4058a7
+
+	Text referencing
+	1.Forcepoint. (2021, March 11). What is the OSI Model? https://www.forcepoint.com/zh-hant/cyber-edu/osi-model
+	2.Froehlich, A., Rosencrance, L., & Gattine, K. (2021, February 26). OSI model (Open Systems Interconnection). SearchNetworking. https://searchnetworking.techtarget.com/definition/OSI
+	3.GeeksforGeeks. (2020, February 4). Layers of OSI Model. https://www.geeksforgeeks.org/layers-of-osi-model/
+	4.OSI Model. (n.d.). JavaTpoint. Retrieved March 25, 2021, from https://www.javatpoint.com/osi-model
+	5.TechTerms. (2018, August 12). OSI Model Explained | OSI Animation | Open System Interconnection Model | OSI 7 layers | TechTerms [Video]. YouTube. https://www.youtube.com/watch?v=vv4y_uOneC0
+	6.What is OSI Model. (n.d.). CloudFlare. https://www.cloudflare.com/zh-tw/learning/ddos/glossary/open-systems-interconnection-model-osi/ -->
+</html>

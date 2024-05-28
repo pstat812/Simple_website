@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--SEHH1016 Introduction to Internet Technology
+				student name,student id,class
+				*** Chau Wai Ming(20075664A) 201C ***
+				Chan Tak Ming(20073738A) 201C
+				Lee Tao(20045346A) 201A
+				Lo Yi(20150411A) 201A
+				Poon Sing Tat(20108491A) 201C
+				Tse Pak Chuen(20066575A) 201A-->
+		<title>Data flow of OSI model</title>
+
+		<!-- add icon link -->
+		<link rel="icon" href="icon/IIT.png" sizes="16x16" type="image/png">
+
+	</head>
+	<body bgcolor="#F2F2F2">
+
+		<!--  the top  -->
+		<a name="Top"></a>
+
+		<!--  navigation bar  -->
+		<table width="100%">
+			<tr>
+				<td width="30%" style="font-size:45px">IIT NEWS</td>
+				<td width="34%"></td>
+				<td width="4%"><a href="index.html"><img src="icon/home.png" width="50px" alt="Home_page"></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="history.html"><h3>HISTORY</h3></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="osi_layers.html"><h3>OSI_LAYERS</h3></a></td>
+				<td width="1%"></td>
+				<td width="6%"><a href="osi_data_flow.html"><h3>OSI_DATA_FLOW</h3></a></td>
+				<td width="1%"></td>
+				<td width="5%"><a href="form.html"><h3>FEEDBACK</h3></a></td>
+				<td width="1%"></td>
+			</tr>
+		</table>
+		<hr>
+        <table width="100%">
+            <tr>
+                <td width ="8%" align="center"> <H1>Layer</H1></td>
+                <td width ="13%" align="center" colspan="2"> <H1>Data Form</H1></td>
+                <td width ="10%"> </td>
+                <td width ="69%" align="center"><H1>Data Process </H1></td>
+            </tr>
+			<!--layer7-->
+            <tr>
+                <td align="center"><img src="picture/layer7.png"></td>
+                <td align="right">
+                    <table border="7" width = "100px" >
+                        <tr>
+							<td align="center"><H2>Data</H2></td>
+						</tr>
+					</table>
+				</td>
+			    <td colspan="2"><hr></td>
+				<td align="justify" style="font-size:18px">
+					The application layer provides the interface for application software to set up communication with another software. 
+					Data will be collected from user in application layer.
+				</td>
+            </tr>
+			<!--arrow-->
+            <tr>
+                <td width="8%"></td>
+                <td width="10%">
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right">
+				</td>
+                <td width="3%"></td>
+				<td width ="10%"></td>
+				<td width ="69%"></td>
+            </tr>
+			<!--layer6-->
+            <tr>
+                <td align="center"><img src="picture/layer6.png"></td>
+                <td align="right">
+                    <table border="7" width = "100px" >
+                        <tr>
+                            <td align="center"><H2>Data</H2></td>
+						</tr>
+					</table>
+				</td>
+			    <td colspan="2"><hr></td>
+				<td align="justify" style="font-size:18px">
+					The presentation layer converts data into a format that can be transmitted which is compatible 
+					to the receiver’s system.
+				</td>
+            </tr>
+			<!--arrow-->
+	        <tr>
+	            <td></td>
+	            <td>
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right">
+				</td>
+	            <td></td>
+				<td></td>
+				<td></td>
+	        </tr>
+			<!--layer5-->
+            <tr>
+				<td align="center"><img src="picture/layer5.png"></td>
+				<td align="right">
+                    <table border="7" width = "100px">
+                        <tr>
+                            <td align="center"><H2>Data</H2></td>
+						</tr>
+					</table>
+				</td>
+			    <td colspan="2"><hr></td>
+				<td align="justify" style="font-size:18px">
+					The session layer is responsible for setting up and maintaining the communication linkages 
+					between two devices in a network during data transmissions.
+				</td>
+            </tr>
+			<!--arrow-->
+		    <tr>
+		        <td></td>
+		        <td>
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right">
+				</td>
+		        <td></td>
+				<td></td>
+				<td></td>
+		    </tr>
+			<!--layer4-->
+            <tr>
+                <td align="left"><img src="picture/layer4.png"></td>
+				<td align="right">
+                    <table border="7" width = "100px" >
+                        <tr>
+                            <td align="center"><H2>Segments</H2></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="2"><hr></td>
+				<td align="justify" style="font-size:18px">
+					The transport layer adds a Transport Header (TH) to data to form a datagram. 
+					The TH contains the transportation information such as the protocol that the user using. 
+					A Transport Header using TCP protocol includes source port number, destination port number, sequence number, acknowledgement number, header length, flags, windows size, TCP checksum, urgent pointer and more. 
+					The length of Transport header usually ranges from 20 to 60 bytes. If it is using UDP protocol, it only contains source port number, destination port number, header length and checksum of header. 
+					The header of UDP datagram have 8 bits only.
+				</td>
+            </tr>
+			<!--arrow-->
+		    <tr>
+		        <td></td>
+		        <td>
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right">
+				</td>
+		        <td></td>
+				<td></td>
+				<td></td>
+		    </tr>
+			<!--layer3-->
+            <tr>
+                <td align="center"><img src="picture/layer3.png"></td>
+				<td align="right">
+                    <table border="7" width = "100px" >
+                        <tr>
+                            <td align="center"><H2>Packets</H2></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="2"><hr></td>
+				<td align="justify" style="font-size:18px">
+					The network determines the routing and forwarding of data. 
+					It adds a Network Header (NH) to a datagram to form a packet. A Network Header contains network address information. 
+					The length of the header of an IP packet also ranges from 20 to 60 bytes.
+				</td>
+            </tr>
+			<!--arrow-->
+			<tr>
+				<td></td>
+				<td>
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<!--layer2-->
+            <tr>
+                <td align="center"><img src="picture/layer2.png"></td>
+				<td align="right">
+                    <table border="7" width="100px">
+                        <tr>
+                            <td align="center"><H2>Frames</H2></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="2"><hr></td>
+				<td align="left" align="justify" style="font-size:18px">
+					The data link layer is responsible for the network addressing as well as error detection and correction. 
+					In this layer, a header and a trailer are added to a packet to form a frame. 
+					The Data Link Header (DLH) contains the physical address and the method of error detection and correction. 
+					A Data Link Trailer (DLT) is a string of bits that indicates the end of the packet. 
+					Ethernet, Wi-Fi and 4G are examples of data link protocols.
+				</td>
+            </tr>
+			<!--arrow-->
+			<tr>
+				<td></td>
+				<td>
+					<img src="picture/downarrow.gif" width="50px" align="right">
+					<img src="picture/uparrow.gif" width="50px" align="right">
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<!--layer1-->
+            <tr>
+                <td align="center"><img src="picture/layer1.png"></td>
+				<td align="right">
+					<table border="7" width="100px">
+						<tr>
+							<td align="center"><H2>Bits</H2></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="2"><hr></td>
+				<td align="left" align="justify" style="font-size:20px">
+					The physical layer transfers frames physically on a LAN. 
+					It is responsible for managing the interaction between communication devices in a computer and a network medium.
+				</td>
+            </tr>
+        </table>
+		<br><br>
+		<a href="#Top"><img src="icon/Top.png" width="40px" alt="Home_page" align="right"></a>
+	</body>
+	<!-- Reference
+	1.Electrical Academia. (2018, December 7). OSI Model Layers and its Functions. https://electricalacademia.com/computer/osi-model-layers-functions/
+	2.[Osi model]. (n.d.). Firewall Firm. https://firewall.firm.in/what-is-the-osi-model/
+	3.Sonymusiccpop. (n.d.). Sony music CPOP [Illustration]. Giphy. https://giphy.com/stickers/sonymusiccpop-sony-music-down-arrow-9PekRRQ0WlrRVwynAk -->
+</html>
